@@ -9,14 +9,14 @@ ENV TZ=Australia/Sydney
 
 # add metadata via labels
 #LABEL ${LABEL_PREFIX}.version="0.0.1"
-#LABEL ${LABEL_PREFIX}.git.repo="git@gitlab.eng.vmware.com:sydney/commonpool.git"
+#LABEL ${LABEL_PREFIX}.git.repo="git@gitlab.eng.vmware.com:sydney/containers/powercli.git"
 #LABEL ${LABEL_PREFIX}.git.commit="DEADBEEF"
 #LABEL ${LABEL_PREFIX}.maintainer.name="Richard Croft"
 #LABEL ${LABEL_PREFIX}.maintainer.email="rcroft@vmware.com"
 #LABEL ${LABEL_PREFIX}.maintainer.url="https://gitlab.eng.vmware.com/rcroft/"
 #LABEL ${LABEL_PREFIX}.released="9999-99-99"
-#LABEL ${LABEL_PREFIX}.based-on="photon:4.0"
-#LABEL ${LABEL_PREFIX}.project="powershell"
+#LABEL ${LABEL_PREFIX}.based-on="mcr.microsoft.com/powershell"
+#LABEL ${LABEL_PREFIX}.project="containers"
 
 # set working to user's home directory
 WORKDIR /root
