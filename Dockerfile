@@ -25,7 +25,7 @@ WORKDIR /root
 RUN pwsh -c 'Set-PSRepository -Name PSGallery -InstallationPolicy Trusted' && \
     pwsh -c "\$ProgressPreference = \"SilentlyContinue\"; Install-Module -Name VMware.PowerCLI" && \
     pwsh -c "Set-PowerCLIConfiguration -Scope AllUsers -ParticipateInCEIP \$false -Confirm:\$false" && \
-    pwsh -c "Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:\$false" 
+    pwsh -c "Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:\$false"
 
 # grab latest PowerCLI samples from github
 # RUN apt-get update && \
@@ -46,6 +46,12 @@ RUN pwsh -c 'Set-PSRepository -Name PSGallery -InstallationPolicy Trusted' && \
 #     pwsh -c "\$ProgressPreference = \"SilentlyContinue\"; Install-Module -Name VMware.vSphere.SsoAdmin" && \
 #     pwsh -c "\$ProgressPreference = \"SilentlyContinue\"; Install-Module -Name PowerVCF" && \
 #     pwsh -c "\$ProgressPreference = \"SilentlyContinue\"; Install-Module -Name PowerNSX"
+
+# set user
+#USER ${USER}
+
+# set working directory
+WORKDIR /workspace
 
 # don't set ENTRYPOINT/CMD, fallback to base powershell ENTRYPOINT/CMD
 #ENTRYPOINT ["pwsh"]
