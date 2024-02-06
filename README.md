@@ -1,5 +1,7 @@
 # Container Image for VMware PowerCLI on PowerShell Core
 
+![](logo.png)
+
 ## Overview
 
 Provides a container image for running VMware PowerCLI and supporting modules.
