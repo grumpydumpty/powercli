@@ -1,7 +1,7 @@
 # Project Information
 site_name: PowerCLI
 site_description: Docker container with PowerShell and VMware PowerCLI.
-site_url: http://powercli.lab.net
+site_url: http://containers.lab.net/powercli
 site_author: Broadcom
 docs_dir: docs
 site_dir: .site
