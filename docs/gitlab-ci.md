@@ -1,4 +1,10 @@
-# GitLab CI/CD
+---
+title: GtiLab CI/CD
+draft: false
+date: 2022-01-31
+authors:
+  - grumpydumpty
+---
 
 ## Current Pipeline Status
 

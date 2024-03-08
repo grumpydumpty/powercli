@@ -1,16 +1,7 @@
-# Components
 
 This image includes the following components:
 
-| Component                          | Version | Description                                                                     |
-|------------------------------------|---------|---------------------------------------------------------------------------------|
-| Microsoft PowerShell Core          | 7.2.0   | A cross-platform automation and configuration tool/framework.                   |
-| `VMware.PowerCLI`                  | 12.7.0  | A collection of PowerShell modules for managing and automating VMware products. |
-| `VMware.vSphere.SsoAdmin`          | x.y.z   | PowerShell module for vCenter Single Sign-on.                                   |
-| `PowerVCF`                         | x.y.z   | PowerShell module for VMware Cloud Foundation API.                              |
-| `PowerValidatedSolutions`          | x.y.z   | PowerShell module for VMware Validated Solutions.                               |
-| `VMware.PowerManagement`           | x.y.z   | PowerShell module for power management of VMware Cloud Foundation.              |
-| `VMware.CloudFoundation.Reporting` | x.y.z   | PowerShell module for VMware Cloud Foundation reporting.                        |
+<!-- DO NOT EDIT BELOW THIS LINE -->
 
 | Package/Tool                         | Version  |
 |--------------------------------------|----------|
