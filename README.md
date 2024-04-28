@@ -99,3 +99,5 @@ _Originally taken from here: [tenthirtyam/container-powerclicore](https://github
 ## Package Versions
 
 <!-- snip -->
+| Package | Version |
+|---------|---------|
