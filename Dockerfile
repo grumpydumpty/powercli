@@ -1,22 +1,22 @@
-FROM mcr.microsoft.com/powershell:latest
+FROM mcr.microsoft.com/powershell:debian-bookworm
 
 # set argument defaults
 ARG DEBIAN_FRONTEND=noninteractive
-#ARG LABEL_PREFIX=com.vmware.eocto
+#ARG LABEL_PREFIX=net.lab
 
 # set timezone env var
 ENV TZ=Australia/Sydney
 
-# add metadata via labels
-#LABEL ${LABEL_PREFIX}.version="0.0.1"
-#LABEL ${LABEL_PREFIX}.git.repo="git@gitlab.eng.vmware.com:sydney/containers/powercli.git"
-#LABEL ${LABEL_PREFIX}.git.commit="DEADBEEF"
-#LABEL ${LABEL_PREFIX}.maintainer.name="Richard Croft"
-#LABEL ${LABEL_PREFIX}.maintainer.email="rcroft@vmware.com"
-#LABEL ${LABEL_PREFIX}.maintainer.url="https://gitlab.eng.vmware.com/rcroft/"
-#LABEL ${LABEL_PREFIX}.released="9999-99-99"
-#LABEL ${LABEL_PREFIX}.based-on="mcr.microsoft.com/powershell"
-#LABEL ${LABEL_PREFIX}.project="containers"
+# # add metadata via labels
+# LABEL ${LABEL_PREFIX}.version="0.0.1"
+# LABEL ${LABEL_PREFIX}.git.repo="git@github.com:grumpdumpty/powercli.git"
+# LABEL ${LABEL_PREFIX}.git.commit="DEADBEEF"
+# LABEL ${LABEL_PREFIX}.maintainer.name="Richard Croft"
+# LABEL ${LABEL_PREFIX}.maintainer.email="rcroft@vmware.com"
+# LABEL ${LABEL_PREFIX}.maintainer.url="https://github.com/grumpdumpty"
+# LABEL ${LABEL_PREFIX}.released="9999-99-99"
+# LABEL ${LABEL_PREFIX}.based-on="powershell:debian-bookworm"
+# LABEL ${LABEL_PREFIX}.project="powercli"
 
 # set working to user's home directory
 WORKDIR /root
